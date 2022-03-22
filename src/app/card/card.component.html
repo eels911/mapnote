@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-name-container">
+    <div class="card-name">
+      <span>{{cardName}}</span>
+      <img *ngIf="isVisa" src="./assets/visa-icon.svg" alt="visa icon">
+      <img *ngIf="isMasterCard" src="./assets/mastercard-icon.svg" alt="mastercard icon">
+    </div>
+  </div>
+  <div class="card-number">{{number}}</div>
+  <div class="cash-date-panel">
+    <span class="cash">{{amount}}</span>
+    <span class="date">{{expirationDate}}</span>
+  </div>
+</div>
